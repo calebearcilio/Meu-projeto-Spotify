@@ -2,6 +2,10 @@
 
 Bem-vindo ao **Meu Projeto Spotify**, um site de reprodução de músicas inspirado no Spotify, desenvolvido como parte da minha jornada de aprendizado em desenvolvimento full-stack. Este projeto foi criado para praticar e demonstrar minhas habilidades com tecnologias modernas de desenvolvimento web.
 
+## 📌 Aviso Legal
+
+Este projeto não está associado, afiliado ou endossado pelo Spotify. Todas as marcas registradas, logotipos e direitos autorais pertencem aos seus respectivos proprietários.Este projeto é apenas uma demonstração técnica para fins educacionais e não deve e nem será usado para fins lucrativos.
+
 ## 🚀 Tecnologias Utilizadas
 
 - **Frontend:**
