@@ -1,7 +1,6 @@
 import React from "react";
-import Header from "./components/Header";
-import Main from "./components/Main";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
 import Home from "./pages/Home";
 import Song from "./pages/Song";
 import Songs from "./pages/Songs";
@@ -12,7 +11,6 @@ const App = () => {
   return (
     <BrowserRouter>
       <Header />
-
       <Routes>
         {/* : => usado para indicar que depois dos : será um parametro | usado na função useParams() */}
         <Route path="/" element={<Home />} />

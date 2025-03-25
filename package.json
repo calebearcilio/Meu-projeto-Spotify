@@ -1,6 +1,7 @@
 {
-  "name": "deploy",
+  "name": "meu-projeto-spotify",
   "version": "1.0.0",
+  "description": "Bem-vindo ao **Meu Projeto Spotify**, um site de reprodução de músicas inspirado no Spotify, desenvolvido como parte da minha jornada de aprendizado em desenvolvimento full-stack. Este projeto foi criado para praticar e demonstrar minhas habilidades com tecnologias modernas de desenvolvimento web.",
   "main": "index.js",
   "scripts": {
     "dev": "npm run dev --prefix front-end",
@@ -9,14 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/calebearcilio/Meu-Projeto-Spotify.git"
+    "url": "git+https://github.com/calebearcilio/Meu-projeto-Spotify.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/calebearcilio/Meu-Projeto-Spotify/issues"
+    "url": "https://github.com/calebearcilio/Meu-projeto-Spotify/issues"
   },
-  "homepage": "https://github.com/calebearcilio/Meu-Projeto-Spotify#readme",
-  "description": ""
+  "homepage": "https://github.com/calebearcilio/Meu-projeto-Spotify#readme"
 }
