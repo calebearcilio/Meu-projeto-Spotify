@@ -5,10 +5,22 @@ import { Link, useParams } from "react-router-dom";
 import SongList from "../components/SongList";
 import { artistArray } from "../assets/database/artists";
 import { songsArray } from "../assets/database/songs";
+import NotFound from "./NotFound";
+
 
 const Artist = () => {
   // useParams() => função que retona o parametro escondido na url (App :)
   const { artistId } = useParams();
+
+  const artistExists = artistArray.some(
+    (currentSongObj) => currentSongObj._id === artistId
+  );
+
+  if (!artistExists) {
+    return (
+      <NotFound />
+    );
+  }
 
   const { name, banner } = artistArray.filter(
     (currentArtistObj) => currentArtistObj._id === artistId

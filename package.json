@@ -4,9 +4,10 @@
   "description": "Bem-vindo ao **Meu Projeto Spotify**, um site de reprodução de músicas inspirado no Spotify, desenvolvido como parte da minha jornada de aprendizado em desenvolvimento full-stack. Este projeto foi criado para praticar e demonstrar minhas habilidades com tecnologias modernas de desenvolvimento web.",
   "main": "index.js",
   "scripts": {
-    "dev": "npm run dev --prefix front-end",
-    "build": "npm install --prefix back-end && npm install --prefix front-end && npm run build --prefix front-end",
-    "start": "npm run start --prefix back-end"
+    "dev": "npm run dev --prefix frontend",
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "dependencies": "npm install --prefix backend && npm install --prefix frontend",
+    "start": "npm run start --prefix backend"
   },
   "repository": {
     "type": "git",

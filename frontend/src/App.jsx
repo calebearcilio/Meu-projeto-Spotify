@@ -6,6 +6,7 @@ import Song from "./pages/Song";
 import Songs from "./pages/Songs";
 import Artist from "./pages/Artist";
 import Artists from "./pages/Artists";
+import NotFound from "./pages/NotFound";
 
 const App = () => {
   return (
@@ -17,7 +18,8 @@ const App = () => {
         <Route path="/songs" element={<Songs />} />
         <Route path="/song/:songId" element={<Song />} />
         <Route path="/artists" element={<Artists />} />
-        <Route path="/artist/:artistId" element={<Artist />} />
+        <Route path="/artist/:artistId" element={<Artist /> } />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
