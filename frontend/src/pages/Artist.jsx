@@ -11,7 +11,8 @@ import NotFound from "./NotFound";
 const Artist = () => {
   // useParams() => função que retona o parametro escondido na url (App :)
   const { artistId } = useParams();
-
+  
+  // Verifica se o id do artista existe
   const artistExists = artistArray.some(
     (currentSongObj) => currentSongObj._id === artistId
   );
@@ -22,17 +23,19 @@ const Artist = () => {
     );
   }
 
+  // Filtra o objeto do artista
   const { name, banner } = artistArray.filter(
     (currentArtistObj) => currentArtistObj._id === artistId
   )[0];
 
+  // Filtra as músicas do artista
   const songsArrayFromArtist = songsArray.filter(
     (currentSongstObj) => currentSongstObj.artist === name
   );
 
   // lógica para escolher uma música aleatória
   const randomIndex = Math.floor(
-    Math.random() * (songsArrayFromArtist.length - 1)
+    Math.random() * (songsArrayFromArtist.length < 1 ? songsArrayFromArtist.length - 1: songsArrayFromArtist.length)
   );
   const randomIdFromArtist = songsArrayFromArtist[randomIndex]._id;
 

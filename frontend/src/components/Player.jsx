@@ -58,6 +58,15 @@ const Player = ({ duration, backwardSongId, forwardSongId, audio }) => {
     return () => clearInterval(intervalId); // clearInterval => finaliza a função setInterval
   }, [isPlaying]);
 
+  useEffect(() => {
+    if (audioPlayer.current) {
+      audioPlayer.current.load();
+      if (isPlaying) {
+        audioPlayer.current.play();
+      }
+    }
+  }, [audio]);
+
   return (
     <div className="player">
       <div className="player__controllers">

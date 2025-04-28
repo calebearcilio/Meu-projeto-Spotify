@@ -583,7 +583,7 @@ footer {
       var(--green-800),
       var(--green-950));
   border-radius: var(--border-radius-l);
-  width: 60%;
+  width: 70%;
   padding: 20px;
   gap: 40px;
   margin: 20px;
@@ -597,7 +597,7 @@ footer {
 
 .notfound__icon {
   margin: 0 15px;
-  font-size: 100px;
+  font-size: 10em;
   color: var(--green-100);
 }
 
@@ -617,4 +617,16 @@ footer {
   background-color: var(--green-200);
   border-radius: var(--border-radius-l);
   transition: var(--transition-duration);
+}
+
+@media (max-width: 1024px) {
+  .notfound__section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .notfound__icon {
+    font-size: 8em;
+  }
 }
